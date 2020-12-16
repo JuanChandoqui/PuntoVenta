@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visual.TiendaEspecias.Controller.TablaInventarioController">
+   <center>
+      <TableView fx:id="tableroInventario" prefHeight="512.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="productoID" prefWidth="108.0" text="Producto ID" />
+          <TableColumn fx:id="nombre" prefWidth="157.0" text="Nombre" />
+            <TableColumn fx:id="precio" prefWidth="151.0" text="Precio" />
+            <TableColumn fx:id="tipo" minWidth="0.0" prefWidth="150.0" text="Tipo" />
+            <TableColumn fx:id="stock" maxWidth="154.0" prefWidth="154.0" text="Stock (KG)" />
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <AnchorPane prefHeight="292.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="226.0" prefWidth="200.0" style="-fx-background-color: #99CC00;">
+               <children>
+                  <ImageView fx:id="imagenLogo" fitHeight="120.0" fitWidth="200.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="20.0" layoutY="151.0" text="ESPECIAS &amp; CONDIMENTOS">
+                     <font>
+                        <Font name="AveriaSerif-Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="imagenFondo" fitHeight="287.0" fitWidth="200.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="botonAgregar" layoutX="-2.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#botonAgregarOnMouseClicked" prefHeight="39.0" prefWidth="204.0" text="Agregar">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b52626" />
+                        <Stop color="#681010" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="botonModificar" layoutX="-2.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#botonModificarOnMouseClicked" prefHeight="39.0" prefWidth="204.0" text="Modificar">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b52626" />
+                        <Stop color="#681010" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button fx:id="botonEliminar" layoutX="-2.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#botonEliminarOnMouseClicked" prefHeight="39.0" prefWidth="204.0" text="Eliminar">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#b52626" />
+                        <Stop color="#681010" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="48.0" prefWidth="400.0" style="-fx-background-color: #263238;" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="56.0" prefWidth="921.0" style="-fx-background-color: #263238;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botonVolver" layoutX="42.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#botonVolverOnMouseClicked" prefHeight="30.0" prefWidth="133.0" text="Volver" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

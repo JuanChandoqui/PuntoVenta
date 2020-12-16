@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visual.TiendaEspecias.Controller.MenuAdministradorController">
+   <center>
+      <AnchorPane prefHeight="572.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imagenLogo" fitHeight="120.0" fitWidth="200.0" layoutX="118.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="117.0" layoutY="286.0" text="ESPECIAS &amp; CONDIMENTOS">
+               <font>
+                  <Font name="AveriaSerif-Regular" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFecha" layoutX="117.0" layoutY="390.0">
+               <font>
+                  <Font name="AveriaSerif-Regular" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="560.0" prefWidth="241.0" style="-fx-background-color: #49271C;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="97.0" layoutY="87.0" text="MENÚ" textFill="#fffafa">
+               <font>
+                  <Font name="AveriaSerif-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="botonListaUsuarios" layoutX="76.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#botonListaUsuariosOnMouseClicked" text="Lista Usuarios" />
+            <Button fx:id="botonInventario" layoutX="86.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#botonInventarioOnMouseClicked" text="Inventario" />
+            <Button fx:id="botonReporte" layoutX="85.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#botonReporteOnMouseClicked" prefWidth="71.0" text="Reporte" />
+            <Button fx:id="botonCambiarSesion" layoutX="77.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#botonCambiarSesionOnMouseClicked" text="Cerrar Sesión" />
+            <Button fx:id="botonSalir" layoutX="86.0" layoutY="397.0" mnemonicParsing="false" onMouseClicked="#botonSalirOnMouseClicked" prefHeight="25.0" prefWidth="66.0" text="Salir" />
+         </children></AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="48.0" prefWidth="400.0" style="-fx-background-color: #263238;" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="48.0" prefWidth="400.0" style="-fx-background-color: #263238;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
